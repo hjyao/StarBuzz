@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBuzz", "StarBuzz\StarBuzz.csproj", "{D59E1BAF-6CCE-4395-8E5A-C2781700E0E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBuzzTest", "StarBuzzTest\StarBuzzTest.csproj", "{7758ADDB-60CE-44A8-9F97-F2354858FA96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{D59E1BAF-6CCE-4395-8E5A-C2781700E0E5}.Debug|x86.Build.0 = Debug|x86
 		{D59E1BAF-6CCE-4395-8E5A-C2781700E0E5}.Release|x86.ActiveCfg = Release|x86
 		{D59E1BAF-6CCE-4395-8E5A-C2781700E0E5}.Release|x86.Build.0 = Release|x86
+		{7758ADDB-60CE-44A8-9F97-F2354858FA96}.Debug|x86.ActiveCfg = Debug|x86
+		{7758ADDB-60CE-44A8-9F97-F2354858FA96}.Debug|x86.Build.0 = Debug|x86
+		{7758ADDB-60CE-44A8-9F97-F2354858FA96}.Release|x86.ActiveCfg = Release|x86
+		{7758ADDB-60CE-44A8-9F97-F2354858FA96}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
