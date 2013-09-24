@@ -6,9 +6,14 @@ namespace StarBuzz
         {
         }
 
-        public override double Cost()
+        public void Add(Sugar sugar)
         {
-            return 10;
+            this.sugar = sugar;
+        }
+
+        public void Add(Milk milk)
+        {
+            this.milk = milk;
         }
     }
 }

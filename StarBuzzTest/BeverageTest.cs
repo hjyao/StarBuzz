@@ -20,13 +20,6 @@ namespace StarBuzzTest
         }
 
         [Fact]
-        public void should_get_description_of_decaf()
-        {
-            var decaf = new Decaf("Best decaf!");
-            Assert.Equal("Best decaf!", decaf.GetDescription());
-        }
-
-        [Fact]
         public void should_get_description_of_espresso()
         {
             var espresso = new Espresso("Best espresso!");
@@ -43,19 +36,13 @@ namespace StarBuzzTest
         public void should_compute_the_cost_of_dark_roast()
         {
             var darkRoast = new DarkRoast("");
-            Assert.Equal(12, darkRoast.Cost());
-        }
-        [Fact]
-        public void should_compute_the_cost_of_decaf()
-        {
-            var decaf = new Decaf("");
-            Assert.Equal(14, decaf.Cost());
+            Assert.Equal(10, darkRoast.Cost());
         }
         [Fact]
         public void should_compute_the_cost_of_espresso()
         {
             var espresso = new Espresso("");
-            Assert.Equal(16, espresso.Cost());
+            Assert.Equal(10, espresso.Cost());
         }
     }
 }

@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeverageTest.cs" />
+    <Compile Include="DarkRoastTest.cs" />
+    <Compile Include="HouseBlendTest.cs" />
+    <Compile Include="EspressoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
