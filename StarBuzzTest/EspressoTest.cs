@@ -6,36 +6,31 @@ namespace StarBuzzTest
     public class EspressoTest
     {
         [Fact]
-        public void should_create_espresso_with_milk_sugar()
+        public void should_compute_espresso_with_milk_sugar()
         {
-            var espresso = new Espresso();
-            var espressoWithSugarAndMilk = new Milk(new Sugar(espresso));
+            var espresso = new Espresso {Milk = true, Sugar = true};
 
-
-            var totalAmount = espressoWithSugarAndMilk.Cost();
+            var totalAmount = espresso.Cost();
 
             Assert.Equal(20.00, totalAmount);
         }
 
         [Fact]
-        public void should_create_espresso_with_sugar()
+        public void should_compute_espresso_with_sugar()
         {
-            var espresso = new Espresso();
-            var espressoWithSugar = new Sugar(espresso);
+            var espresso = new Espresso {Sugar = true};
 
-            var totalAmount = espressoWithSugar.Cost();
+            var totalAmount = espresso.Cost();
 
             Assert.Equal(15.00, totalAmount);
         }
 
         [Fact]
-        public void should_create_espresso_with_milk()
+        public void should_compute_espresso_with_milk()
         {
-            var espresso = new Espresso();
-            var espressoWithMilk = new Milk(espresso);
+            var espresso = new Espresso {Milk = true};
 
-
-            var totalAmount = espressoWithMilk.Cost();
+            var totalAmount = espresso.Cost();
 
             Assert.Equal(15.00, totalAmount);
         }

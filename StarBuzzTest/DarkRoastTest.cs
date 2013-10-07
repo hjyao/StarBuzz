@@ -6,33 +6,31 @@ namespace StarBuzzTest
     public class DarkRoastTest
     {
         [Fact]
-        public void should_create_dark_roast_with_milk_sugar()
+        public void should_compute_dark_roast_with_milk_sugar()
         {
-            var darkRoast = new DarkRoast();
-            var darkRoastWithMilkAndSugar = new Milk(new Sugar(darkRoast));
-            var totalAmount = darkRoastWithMilkAndSugar.Cost();
+            var darkRoast = new DarkRoast {Milk = true, Sugar = true};
+
+            var totalAmount = darkRoast.Cost();
 
             Assert.Equal(20.00, totalAmount);
         }
 
         [Fact]
-        public void should_create_dark_roast_with_sugar()
+        public void should_compute_dark_roast_with_sugar()
         {
-            var darkRoast = new DarkRoast();
-            var darkRoastWithSugar = new Sugar(darkRoast);
+            var darkRoast = new DarkRoast {Sugar = true};
 
-            var totalAmount = darkRoastWithSugar.Cost();
+            var totalAmount = darkRoast.Cost();
 
             Assert.Equal(15.00, totalAmount);
         }
 
         [Fact]
-        public void should_create_dark_roast_with_milk()
+        public void should_compute_dark_roast_with_milk()
         {
-            var darkRoast = new DarkRoast();
-            var darkRoastWithMilk = new Milk(darkRoast);
+            var darkRoast = new DarkRoast {Milk = true};
 
-            var totalAmount = darkRoastWithMilk.Cost();
+            var totalAmount = darkRoast.Cost();
 
             Assert.Equal(15.00, totalAmount);
         }

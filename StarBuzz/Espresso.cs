@@ -6,7 +6,7 @@ namespace StarBuzz
 
         public override double Cost()
         {
-            return cost;
+            return cost + base.Cost();
         }
     }
 }
