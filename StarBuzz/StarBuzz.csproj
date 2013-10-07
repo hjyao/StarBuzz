@@ -48,13 +48,9 @@
   <ItemGroup>
     <Compile Include="Beverage.cs" />
     <Compile Include="DarkRoast.cs" />
-    <Compile Include="DarkRoastWithMilk.cs" />
-    <Compile Include="DarkRoastWithMilkAndSugar.cs" />
-    <Compile Include="DarkRoastWithSugar.cs" />
+    <Compile Include="Sugar.cs" />
     <Compile Include="Espresso.cs" />
-    <Compile Include="EspressoWithMilk.cs" />
-    <Compile Include="EspressoWithSugar.cs" />
-    <Compile Include="EspressoWithSugarAndMilk.cs" />
+    <Compile Include="Milk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

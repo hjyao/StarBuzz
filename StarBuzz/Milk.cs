@@ -1,13 +1,12 @@
-﻿namespace StarBuzz
+namespace StarBuzz
 {
-    public class Sugar : Condiment
+    public class Milk : Condiment
     {
         public const double cost = 5;
 
-        public Sugar(Beverage beverage)
+        public Milk(Beverage beverage)
         {
             this.beverage = beverage;
         }
-
     }
 }
