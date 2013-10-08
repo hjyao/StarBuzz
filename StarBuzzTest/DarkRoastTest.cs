@@ -8,7 +8,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_dark_roast_with_milk_sugar()
         {
-            var darkRoast = new DarkRoast {Milk = true, Sugar = true};
+            var darkRoast = new DarkRoast (true, true);
 
             var totalAmount = darkRoast.Cost();
 
@@ -18,7 +18,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_dark_roast_with_sugar()
         {
-            var darkRoast = new DarkRoast {Sugar = true};
+            var darkRoast = new DarkRoast(false, true);
 
             var totalAmount = darkRoast.Cost();
 
@@ -28,7 +28,8 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_dark_roast_with_milk()
         {
-            var darkRoast = new DarkRoast {Milk = true};
+            var darkRoast = new DarkRoast (true, false);
+            
 
             var totalAmount = darkRoast.Cost();
 
