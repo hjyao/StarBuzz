@@ -2,34 +2,30 @@ namespace StarBuzz
 {
     public class Espresso : Beverage                                      
     {
-        public Espresso(bool hasMilk, bool hasSugar)
+        public static Espresso CreateEspresso(bool hasMilk, bool hasSugar)
         {
-            HasMilk = hasMilk;
-            HasSugar = hasSugar;
+            if (!hasMilk && !hasSugar)
+            {
+                return new Espresso();
+            }
+            if (!hasMilk)
+            {
+                return new EspressoWithSugar();
+            }
+            if (!hasSugar)
+            {
+                return new EspressoWithMilk();
+            }
+            return new EspressoWithMilkSugar();
         }
 
-        private const double milkCost = 5.00;
-
-        private const double sugarCost = 5.00;
-
-        public bool HasMilk { get; private set; }
-
-        public bool HasSugar { get; private set; }
+        protected Espresso()
+        {
+        }
 
         public override double Cost()
         {
-            var cost = 0.00;
-
-            if (HasMilk)
-            {
-                cost += milkCost;
-            }
-
-            if (HasSugar)
-            {
-                cost += sugarCost;
-            }
-            return cost + 10;
+            return 10.00;
         }
     }
 }

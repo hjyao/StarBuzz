@@ -15,7 +15,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_the_cost_of_espresso()
         {
-            var espresso = new Espresso(false,false);
+            var espresso = Espresso.CreateEspresso(false,false);
             Assert.Equal(10, espresso.Cost());
         }
     }
