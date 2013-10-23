@@ -8,7 +8,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_espresso_with_milk_sugar()
         {
-            var espresso = Espresso.CreateEspresso(true, true);
+            var espresso = new Espresso(true, true);
 
             var totalAmount = espresso.Cost();
 
@@ -18,7 +18,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_espresso_with_sugar()
         {
-            var espresso = Espresso.CreateEspresso(false, true);
+            var espresso = new Espresso(false, true);
 
             var totalAmount = espresso.Cost();
 
@@ -28,7 +28,7 @@ namespace StarBuzzTest
         [Fact]
         public void should_compute_espresso_with_milk()
         {
-            var espresso = Espresso.CreateEspresso(true, false);
+            var espresso = new Espresso(true, false);
 
             var totalAmount = espresso.Cost();
 
