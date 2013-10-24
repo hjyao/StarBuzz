@@ -2,6 +2,8 @@ namespace StarBuzz
 {
     public class DarkRoast : Beverage
     {
+        private double darkRoastCost = 10.00;
+
         public DarkRoast(bool hasMilk, bool hasSugar)
         {
             HasMilk = hasMilk;
@@ -16,18 +18,16 @@ namespace StarBuzz
 
         public override double Cost()
         {
-            var cost = 0.00;
-
             if (HasMilk)
             {
-                cost += milkCost;
+                darkRoastCost += milkCost;
             }
 
             if (HasSugar)
             {
-                cost += sugarCost;
+                darkRoastCost += sugarCost;
             }
-            return cost + 10;
+            return darkRoastCost;
         }
     }
 }

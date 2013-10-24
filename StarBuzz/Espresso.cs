@@ -2,6 +2,8 @@ namespace StarBuzz
 {
     public class Espresso : Beverage                                      
     {
+        private double espressoCost = 10.00;
+
         public Espresso(bool hasMilk, bool hasSugar)
         {
             HasMilk = hasMilk;
@@ -18,18 +20,16 @@ namespace StarBuzz
 
         public override double Cost()
         {
-            var cost = 0.00;
-
             if (HasMilk)
             {
-                cost += milkCost;
+                espressoCost += milkCost;
             }
 
             if (HasSugar)
             {
-                cost += sugarCost;
+                espressoCost += sugarCost;
             }
-            return cost + 10;
+            return espressoCost;
         }
     }
 }
